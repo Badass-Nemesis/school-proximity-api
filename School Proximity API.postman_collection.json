@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "94686b8b-b02c-4b5b-b4d9-7b9c6e23e443",
+		"name": "School Proximity API",
+		"description": "Collection for testing School API endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25135020"
+	},
+	"item": [
+		{
+			"name": "Add School",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Coastal Breeze Academy\",\n    \"address\": \"654 Beach Blvd\",\n    \"latitude\": 36.7783,\n    \"longitude\": -119.4179\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/schools/addSchool",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"schools",
+						"addSchool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Schools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/schools/listSchools?latitude=20&longitude=-10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"schools",
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "20"
+						},
+						{
+							"key": "longitude",
+							"value": "-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://school-proximity-api.onrender.com",
+			"type": "string"
+		}
+	]
+}

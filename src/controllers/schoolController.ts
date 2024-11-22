@@ -31,6 +31,7 @@ export const listSchools = async (req: Request, res: Response, next: NextFunctio
         const schools = await getAllSchoolsFromDB();
 
         /**
+         * YT link - https://youtu.be/t6NkBRQ2Fz0
          * calculate the distance between two geographical points using the Haversine formula.
          * @param {number} lat1 - Latitude of the first point.
          * @param {number} lon1 - Longitude of the first point.
