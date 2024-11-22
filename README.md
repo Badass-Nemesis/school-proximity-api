@@ -127,7 +127,7 @@ You can use the following Postman collection to test your API endpoints:
 
 1. **Import the collection** using the link:
     ```plaintext
-    https://api.postman.com/collections/25135020-94686b8b-b02c-4b5b-b4d9-7b9c6e23e443?access_key=PMAT-01JD9FEVG0SAX2Y9RJT3P4C7BD
+    https://tinyurl.com/bdd4h42f
     ```
 2. **Set the `baseUrl` variable** to your deployed API URL:
     ```plaintext
